@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_kapacitis",
+  "info": {
+    "singularName": "tag-kapaciti",
+    "pluralName": "tag-kapacitis",
+    "displayName": "TagKapaciti",
+    "description": "Classification tags available for Kapaciti articles"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "tag": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article-kapaciti.article-kapaciti",
+      "mappedBy": "kapaciti_tags"
+    }
+  }
+}
