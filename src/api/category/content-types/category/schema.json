@@ -22,8 +22,8 @@
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "category"
+      "target": "api::article-kapaciti.article-kapaciti",
+      "mappedBy": "categories"
     }
   }
 }
