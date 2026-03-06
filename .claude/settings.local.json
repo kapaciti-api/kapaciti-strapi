@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-strapi@latest . --ts --no-run --skip-cloud --no-git-init --no-example --non-interactive --install --dbclient better-sqlite3)",
+      "Bash(cp -r \"d:/Work/Company/kapaciti-strapi/.git\" \"d:/Work/Company/.git-kapaciti-backup\")",
+      "Bash(rm -rf \"d:/Work/Company/kapaciti-strapi/.git\")",
+      "Read(//d/Work/Company/**)",
+      "Bash(npx create-strapi@latest kapaciti-strapi-scaffold --ts --no-run --skip-cloud --no-git-init --no-example --non-interactive --install --dbclient better-sqlite3)",
+      "Bash(npx create-strapi@latest kapaciti-strapi-scaffold --ts --no-run --skip-cloud --no-git-init --no-example --non-interactive --install --dbclient sqlite)",
+      "Bash(npx rimraf node_modules)",
+      "Bash(rsync -a --exclude='node_modules' --exclude='.git' \"d:/Work/Company/kapaciti-strapi-scaffold/\" \"d:/Work/Company/kapaciti-strapi/\")",
+      "Bash(while read f)",
+      "Bash(do cp -r \"$f\" \"d:/Work/Company/kapaciti-strapi/\")",
+      "Bash(done)",
+      "Bash(node -e \"const c=require\\(''crypto''\\);console.log\\(''HOST=0.0.0.0\\\\nPORT=1337\\\\nAPP_KEYS=\"\"''+c.randomBytes\\(16\\).toString\\(''base64''\\)+'',''+c.randomBytes\\(16\\).toString\\(''base64''\\)+''\"\"\\\\nAPI_TOKEN_SALT=''+c.randomBytes\\(16\\).toString\\(''base64''\\)+''\\\\nADMIN_JWT_SECRET=''+c.randomBytes\\(32\\).toString\\(''base64''\\)+''\\\\nTRANSFER_TOKEN_SALT=''+c.randomBytes\\(16\\).toString\\(''base64''\\)+''\\\\nJWT_SECRET=''+c.randomBytes\\(32\\).toString\\(''base64''\\)+''\\\\nENCRYPTION_KEY=''+c.randomBytes\\(32\\).toString\\(''base64''\\)\\)\")",
+      "Bash(\"d:/Work/Company/kapaciti-strapi/.env\")",
+      "Bash(npm install)",
+      "Bash(rm -rf \"d:/Work/Company/kapaciti-strapi-scaffold\")",
+      "Bash(rm -rf \"d:/Work/Company/.git-kapaciti-backup\")"
+    ],
+    "additionalDirectories": [
+      "d:\\Work\\Company\\kapaciti-strapi\\.git"
+    ]
+  }
+}
