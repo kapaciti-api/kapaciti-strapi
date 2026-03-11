@@ -15,7 +15,7 @@ const triggerGitHubRebuild = () => {
   rebuildTimeout = setTimeout(async () => {
     try {
       const response = await fetch(
-        "https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/dispatches",
+        "https://api.github.com/repos/thomashuynhqn/kapaciti/dispatches",
         {
           method: "POST",
           headers: {
